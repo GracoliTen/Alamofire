@@ -97,7 +97,7 @@ open class SessionManager {
 
                 let alamofireVersion: String = {
                     guard
-                        let afInfo = Bundle(for: SessionManager.self).infoDictionary,
+                        let afInfo = Bundle.main.infoDictionary,
                         let build = afInfo["CFBundleShortVersionString"]
                     else { return "Unknown" }
 
